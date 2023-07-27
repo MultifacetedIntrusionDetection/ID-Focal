@@ -22,6 +22,10 @@ from tensorflow.keras.optimizers import Adam
 from hypopt import GridSearch
 import keras
 
+
+### Classification report
+from sklearn.metrics import classification_report
+
 def focal_loss(gamma=2.5, alpha=1):
 
     gamma = float(gamma)
