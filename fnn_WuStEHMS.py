@@ -14,7 +14,7 @@ import numpy as np
 import argparse
 #import cv2
 import os
-from sklearn.metrics import matthews_corrcoef
+
 import io
 import pandas as pd
 import tensorflow as tf
@@ -23,17 +23,8 @@ from hypopt import GridSearch
 import keras
 
 ### Classification report
-
-# predict probabilities for test set
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import precision_score
-from sklearn.metrics import recall_score
-from sklearn.metrics import f1_score
-from sklearn.metrics import cohen_kappa_score
-from sklearn.metrics import roc_auc_score
-from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
-
+from sklearn.metrics import matthews_corrcoef
 def focal_loss(gamma=2., alpha= 2):
 
     gamma = float(gamma)
